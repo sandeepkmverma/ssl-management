@@ -43,8 +43,27 @@ Multi-domain SSL certificates are also considered as Unified Communications Cert
 ## How to place an order for purchasing an SSL certificate?
 1. First step throughout the SSL management process is to identify and choose the right certificate for your requirement.
 2. Once you have decided and opted to purchase the right certificate, you need to place an order with the any of the SSL vendors available in the market eg. CSC Global, Digicert etc
-3. You will have to inform the vendor that you wish to purchase lets say a Wildcard SSL certificate for the domain *.tothenew.com.
+3. You will have to inform the vendor that you wish to purchase lets say a Wildcard SSL certificate for the below domain: 
+
+```
+*.tothenew.com
+```
+
 4. You will need to generate a CSR and share it with the SSL vendor.
 5. SSL vendors will validate the CSR and send the required SSL certificate after approval.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
