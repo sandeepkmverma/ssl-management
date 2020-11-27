@@ -53,6 +53,31 @@ Multi-domain SSL certificates are also considered as Unified Communications Cert
 5. SSL vendors will validate the CSR and send the required SSL certificate after approval.
 
 
+## What is a CSR and how can we generate a CSR?
+- A certificate signing request (CSR) is one of the first steps towards getting your own SSL Certificate. 
+- The CSR contains information (e.g. common name, organization, country) the Certificate Authority (CA) will use to create your certificate. 
+- It also contains the public key that will be included in your certificate and is signed with the corresponding private key.
+- To generate your CSR, you will need to log in to your server and use the OpenSSL software to generate a CSR and private key. Detailed instructions are as follows.
+
+## Steps to generate a CSR
+
+1. Below steps are just an example which demonstrates the process of generating the CSR.
+2. Log in to your server, and enter the following command:
+```
+openssl req -nodes -newkey rsa:2048 -keyout tothenew.key -out tothenew.csr
+```
+3. This will generate two files: a CSR called “tothenew.csr” and a 2048-bit private key called “tothenew.key”
+4. You will be prompted to enter some information for your CSR:
+- Country Name (2 letter code) [AU]: IN
+- State or Province Name (full name) [some state]: Uttar Pradesh
+- Locality Name (e.g., city): Noida
+- Organization Name (e.g., company): TO THE NEW PVT LTD.
+- Organizational Unit Name (e.g., section): TO THE NEW
+- Common Name (e.g., YOUR name): *.tothenew.com
+- Email Address:  it-team@tothenew.com
+5. Please enter the following “extra” attributes to be sent with your certificate request:
+- A challenge password: (leave empty)
+- An optional company name: (leave empty)
 
 
 
