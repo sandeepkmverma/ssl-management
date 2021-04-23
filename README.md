@@ -229,13 +229,7 @@ def lambda_handler(event, context):
 
 ```
 
-## Author of the Document
 
-#### Name: Salman Ahsan
-
-#### Email ID: salman.ahsan@tothenew.com
-
-#### Mob No.: +91-9891258741
 
 
 
